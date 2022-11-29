@@ -52,10 +52,6 @@ namespace lab2_3.Controllers
                 db.Recycles.Add(recycle);
                 db.SaveChanges();
             }
-            else
-            {
-                return View("Объект базы данных не найден");
-            }
             ViewBag.Recycle = db.Recycles;
             return View();
         }
